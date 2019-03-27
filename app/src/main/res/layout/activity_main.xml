@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:text="Recognition Result"
+        android:textColor="@color/colorSecondaryText"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/img_pic"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_margin="30dp"
+        android:scaleType="fitXY" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:layout_marginEnd="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClickTakePhoto"
+            android:text="photo"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="16sp" />
+
+        <Button
+            android:layout_marginStart="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClickAlbum"
+            android:text="album"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</LinearLayout>
